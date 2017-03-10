@@ -1,0 +1,29 @@
+{
+  "name": "employee",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true,
+      "id": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "manager": {
+      "type": "belongsTo",
+      "model": "employee",
+      "foreignKey": "managerId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
