@@ -40,6 +40,15 @@ module.exports = function(app) {
         id: 190,
         name: 'David',
         managerId: 400
+      },
+      {
+        id: 290,
+        name: 'Navi'
+      },
+      {
+        id: 291,
+        name: 'Harry',
+        managerId: 1000
       }
     ], function(err, employees) {
       if (err) throw err;
